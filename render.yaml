@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: xslt-api
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python xslt_server.py
